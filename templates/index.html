@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Smart Reading Companion</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+  <div class="wrapper">
+    <div class="card">
+      <h1 class="title">Smart Reading Companion</h1>
+      <p class="sub">Paste text, press Generate, get summary & highlighted text instantly.</p>
+
+      <form id="mainForm">
+        <textarea id="textBox" name="text" placeholder="Paste or type your text here..."></textarea>
+
+        <div class="counts">
+          <span id="charCount">0 chars</span>
+          <span id="wordCount">0 words</span>
+        </div>
+
+        <button id="submitBtn" class="glow-btn" type="submit">Generate</button>
+      </form>
+
+      <div class="outputs">
+        <div class="output-card">
+          <h3>Summary</h3>
+          <div id="summaryBox" class="output"></div>
+        </div>
+
+        <div class="output-card">
+          <h3>Highlighted</h3>
+          <div id="highlightBox" class="output"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="/static/script.js"></script>
+</body>
+</html>
